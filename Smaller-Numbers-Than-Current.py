@@ -1,28 +1,23 @@
 
 class Solution:
-
     def smallerNumbersThanCurrent(self, nums):
-
-        nm = []
         
+        count_num = []
+
         for num in nums:
             count = 0
             for i in range(len(nums)):
                 if num > nums[i]:
                     count += 1
-            nm.append(count)
+            count_num.append(count)
 
-        return nm
-            
-
-    
-
+        return count_num
 
 
 
 if __name__=='__main__':
-    sln = Solution()
 
+    sln = Solution()
     num = [8, 1, 2, 2, 3]
-    # sln.smallerNumbersThanCurrent(num)
+
     print(sln.smallerNumbersThanCurrent(num))
