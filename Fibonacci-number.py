@@ -1,6 +1,5 @@
 
 class Solution:
-
     def fibonacci(self, n):
 
         if n==0:
@@ -16,4 +15,4 @@ class Solution:
 if __name__=='__main__':
     sln = Solution()
 
-    print(sln.fibonacci(8))
+    print(sln.fibonacci(100)) # 21
